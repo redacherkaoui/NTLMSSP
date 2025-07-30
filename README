@@ -1,6 +1,4 @@
-Certainly! Here’s a **GitHub‑ready markdown** article styled *identically* to your provided text, with **no additions or removals**—just properly formatted for a GitHub security advisory:
 
-````markdown
 # Advisory: Potential Heap Corruption in SMB2 Preauth Integrity and SPNEGO/NTLMSSP Parsing
 
 ---
@@ -33,7 +31,7 @@ but does **not** validate that `dataLen` ≤ the 0x160‑byte heap context, allo
 
 A remote, unauthenticated attacker with network access to TCP 445 can provoke unbounded heap writes in kernel mode (SMB2 create‑contexts) or user mode (SPNEGO/NTLMSSP) by sending malformed NEGOTIATE or SESSION\_SETUP messages. This may result in denial‑of‑service or, with suitable heap grooming, arbitrary code execution under elevated privileges.
 
-```
+
 
 Just copy and paste this markdown into your GitHub advisory or repo—it will render perfectly. If you want additional styling (badges, code block colors, etc.), let me know!
 ```
