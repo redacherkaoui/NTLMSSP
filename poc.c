@@ -270,8 +270,8 @@ int main(void) {
     printf("[DEBUG] PoC starting...\n");
 
     // 1) Connect
-    const char* target = "192.168.11.101";
-    SOCKET sock = connect_to_target(target, 445, 5000);
+    const char* target = "0.0.0.0";
+    SOCKET sock = connect_to_target(target, 0, 5000);
     if (sock == INVALID_SOCKET) {
         fprintf(stderr, "[ERROR] failed to connect\n");
         return 1;
