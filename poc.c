@@ -1,3 +1,17 @@
+// DISCLAIMER:
+// This proof-of-concept code and write-up are provided "as is," without warranty of any kind.
+// They are intended solely for educational and authorized security-research purposes.
+// Do not deploy or run this code against any system without explicit permission from the owner.
+// Verify that your testing complies with all applicable laws, regulations, and organizational policies.
+// The author and contributors assume no liability for damages or legal consequences arising from misuse.
+// 
+// IMPORTANT NOTE:
+// This PoC does NOT exploit the SMB2 Create-Context heap-overflow bug, as the relevant parsing logic 
+// has been moved out of msv1_0.dll in the latest Windows SMB2/3 implementation. 
+// Use this code only as a learning reference, not as a functional exploit. 
+
+
+
 // SMB2 Authentication PoC using SSPI
 // This file demonstrates SMB2 NEGOTIATE and SESSION_SETUP with NTLM auth
 // ===========================================================================
